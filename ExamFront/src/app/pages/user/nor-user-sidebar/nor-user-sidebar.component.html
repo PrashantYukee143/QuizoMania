@@ -1,0 +1,17 @@
+<mat-card class="mt5 mat-card">
+    <mat-action-list class="mat-action-list">
+      <div mat-subheader>Available Categories</div>
+      <button mat-list-item routerLink="/user-dashboard/0" class="menu-item">
+        <mat-icon mat-list-icon>quiz</mat-icon>
+        <span class="menu-text">All Quizzes</span>
+      </button>
+      <button mat-list-item [routerLink]="'/user-dashboard/'+c.cid" class="menu-item" *ngFor="let c of categories">
+        <mat-icon mat-list-icon><span class="material-symbols-outlined">
+            psychology_alt
+            </span></mat-icon>
+        <span class="menu-text">{{c.title}}</span>
+      </button>
+    </mat-action-list>
+  </mat-card>
+  <!-- {{categories | json}} -->
+  

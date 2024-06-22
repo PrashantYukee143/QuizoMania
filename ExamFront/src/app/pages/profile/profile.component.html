@@ -1,0 +1,47 @@
+<mat-card *ngIf="user" class="mt5 mat-card">
+    <h1 class="ml10 mt10">Your Profile Details</h1> 
+    <!-- {{user | json}} -->
+    <mat-card-content class="mat-card-content">
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="conatiner text-center mb20">
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU" 
+                alt=""
+                class="profile-image"
+                />
+                <h1>{{user.firstName}} {{user.lastname}}</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <table class="table mb20 text-center">
+                        <tr>
+                            <td>Username</td>
+                            <td>{{user.username}}</td>
+                        </tr>
+                        <tr>
+                            <td>UserId</td>
+                            <td>{{user.id}}</td>
+                        </tr>
+                        <tr *ngIf="user.phone">
+                            <td>phone</td>
+                            <td>{{user.phone}}</td>
+                        </tr>
+                        <tr>
+                            <td>Role</td>
+                            <td>{{user.authorities[0].authority}}</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>{{ user.enabled ? "ACTIVE" : "NOTACTIVE" }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>   
+</mat-card-content>
+<mat-card-actions class=" mat-card-actions">
+    <button mat-raised-button color="primary" class="mr10">UPDATE</button>
+    <button mat-raised-button color="accent">SHARE</button>
+</mat-card-actions>
+</mat-card>

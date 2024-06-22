@@ -1,0 +1,12 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .custom-style {
+    color: #ffffff; /* Set text color */
+    margin-top: 200px;
+  }
+  
