@@ -1,0 +1,29 @@
+<!-- quiz.component.html -->
+<div class="quiz-card-container">
+    <mat-card class="mt5 quiz-card" *ngFor="let q of quizzes">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+          {{ q.title }}
+          <div class="status-circle" [ngClass]="{'green-circle': q.active, 'red-circle': !q.active}"></div>
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle-container">
+          <span>{{ q.category.title }}</span>
+          <div class="triangle-buttons ml5">
+            <button class="max-marks-button">Max Marks {{ q.maxMarks }}</button>
+            <button class="total-questions-button ml5">Total Questions: {{ q.numberOfQuestions }}</button>
+          </div>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        {{ q.description }}
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="quiz-button ml8" [routerLink]="'/admin/view-questions/'+ q.qId +'/'+q.title">Questions</button>
+        <button class="quiz-button ml8" [routerLink]="'/admin/quiz/'+q.qId">Update</button>
+        <button class="attempt-button ml8">Attempts</button>
+        <button class="delete-button ml8" (click)="deleteQuiz(q.qId)">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

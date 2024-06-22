@@ -1,0 +1,83 @@
+.mat-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Light semi-transparent white background */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  padding: 0px;
+  /* Inner padding */
+  margin: 0px;
+}
+
+.custom-bold {
+  font-weight: 600;
+  /* You can adjust the value for the desired boldness */
+}
+
+.custom-bold1 {
+  font-weight: 550;
+  /* You can adjust the value for the desired boldness */
+}
+
+.mat-card-title {
+  text-decoration: underline;
+}
+
+.add-button {
+  width: 9%;
+  padding: 5px;
+  background-color:#eab02a;
+  /* Primary color */
+  color: #fff;
+  /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+/* Hover effect for login button */
+.add-button:hover {
+  background-color: #7c7bbc;
+}
+.subtitle-container {
+  display: flex;
+  /* Display its children in a horizontal line */
+  justify-content: space-between;
+  /* Space items evenly on the horizontal axis */
+  align-items: center;
+  /* Center items vertically */
+}
+.delete-button {
+  width: 7%;
+  padding: 7px;
+  background-color:#b0331a;
+  /* Primary color */
+  color: #fff;
+  /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for login button */
+.delete-button:hover {
+  background-color: #7c7bbc;
+}
+.update-button {
+  width: 7%;
+  padding: 7px;
+  background-color: #eab02a;
+  /* Primary color */
+  color: #fff;
+  /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for login button */
+.update-button:hover {
+  background-color: #7c7bbc;
+}

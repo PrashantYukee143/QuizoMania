@@ -1,0 +1,61 @@
+/* Add this CSS to your component's CSS file or global styles.css */
+
+.menu-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .mat-icon {
+    vertical-align: middle; /* Align the icon vertically in the middle of the line-height */
+  }
+  
+  .menu-text {
+    margin-left: 8px; /* Add margin between the icon and text */
+    vertical-align: middle; /* Align the text vertically in the middle of the line-height */
+  }
+  .mat-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 0px; /* Inner padding */
+    margin: 0px;
+  }
+  
+  .mat-card-title {
+    font-size: 24px; /* Title font size */
+    font-weight: bold; /* Title font weight */
+  }
+  
+  .mat-card-content {
+    font-size: 16px; /* Content font size */
+  }
+  
+  .mat-card-actions {
+    display: flex;
+    justify-content: center; /* Align actions to the right */
+  }
+  
+  .mat-card-footer {
+    font-size: 14px; /* Footer font size */
+    color: #666; /* Footer text color */
+  }  
+  .add-button {
+    width: 20%;
+    padding: 9px;
+    background-color: #f3ce77;
+    /* Primary color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for login button */
+.add-button:hover {
+    background-color: #7c7bbc;
+    /* Darker shade of primary color on hover */
+}  
+.custom-bold {
+    font-weight: 600; /* You can adjust the value for the desired boldness */
+}
